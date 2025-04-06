@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real Born Brothers</title>
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --red: #d90429;
+      --gray: #1a1a1a;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--red);
+      color: var(--white);
+      border: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      color: var(--red);
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+      background-color: var(--gray);
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--red);
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: var(--red);
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .artist-section {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .artist-photo {
+      flex: 1;
+      max-width: 300px;
+      position: relative;
+    }
+
+    .artist-photo img {
+      width: 100%;
+      border-radius: 10px;
+      border: 3px solid var(--red);
+    }
+
+    .artist-photo .name-overlay {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(217, 4, 41, 0.8);
+      color: white;
+      padding: 5px 10px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .artist-info {
+      flex: 2;
+      min-width: 250px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .artist-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="theme-toggle" onclick="toggleTheme()">Light/Dark</button>
+
+  <header>
+    <h1>Real Born Brothers</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#lilyounn">Lil Younn</a>
+    <a href="#music">Music</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <h2>About Us</h2>
+    <p>
+      Real Born Brothers (RBB) is a record label founded by Lil Younn. it is more than just a record label, RBB represents the streets, the pain, and the hustle behind every verse and every beat.— RBB stands for the unheard, the overlooked, and the underestimated.
+    </p>
+    <p>
+      Founded to amplify the voices that never had a platform, RBB stands for those who were never heard. We create music for the people with raw emotoin, street wisdom, and full of passion. Whether it’s the grind, the fight, or the rise from the bottom, our sound tells real stories that can't be ignored.
+    </p>
+    <p>
+      At RBB, we don't follow trends — we define them. We're independent, we're powerful, and we’re united by one mission: 
+      to give the voiceless a voice. This is not just music — this is a legacy in the making.
+    </p>
+    <p style="font-weight: bold; color: var(--red);">
+      Real Born Brothers. The Voice of the Voiceless.
+    </p>
+  </section>
+   <!-- Lil Younn Artist Section -->
+   <section class="section" id="lilyounn">
+    <h2>Lil Younn</h2>
+    <div class="artist-section">
+      <div class="artist-photo">
+        <img src="https://via.placeholder.com/300x400?text=Lil+Younn" alt="Lil Younn">
+        <div class="name-overlay">Lil Younn</div>
+      </div>
+      <div class="artist-info">
+        <p>
+          Lil Younn, founder of Real Born Brothers (RBB), doesn’t just make music — he carries a legacy.He doesn’t just tell stories — he bleeds them. This journey isn’t about fame, it’s about legacy. About walking the road alone so others know they’re not.
+        </p>
+        <p>
+          His lyrics speak for those who never had a voice, capturing moments of sacrifice, loyalty, and silent battles fought behind closed doors. He walks alone, but his words walk with many.His lyrics cut through silence — 
+          exposing truth, struggle, and survival.His lyrics speak for those who never had a voice, capturing moments of sacrifice, loyalty, and silent battles fought behind closed doors. He walks alone, but his words walk with many. 
+        </p>
+        <p>
+          He doesn’t just rap — he delivers testimony. Music is his weapon, his therapy, and his rebellion. Through his voice, 
+          the unheard become heard, and the forgotten become remembered. Even with money on the table, he stays rooted in the trenches — not because he’s stuck, but because he never forgets where he came from. That’s where the soul of his sound lives.
+        </p>
+        <p style="font-weight: bold; color: var(--red);">
+          He’s The VOICE that can’t be silenced.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Music Section -->
+  <section class="section" id="music">
+    <h2>Music</h2>
+    <p>
+      Lil Younn’s sound blends reality and rhythm. His upcoming tracks will soon be featured right here. Stay tuned for drops, exclusive 
+      releases, and music that speaks your story.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>
+      Want to collaborate or reach out to the RBB team? Hit us at:  
+      <strong>realbornbrothers@gmail.com</strong>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Real Born Brothers (RBB). All rights reserved.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.style.backgroundColor === "white";
+      if (isDark) {
+        body.style.backgroundColor = "var(--black)";
+        body.style.color = "var(--white)";
+      } else {
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+
